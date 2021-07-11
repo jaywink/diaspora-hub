@@ -26,7 +26,7 @@ ENV REDIS_HOST redis
 ENV DATABASE_URL postgres://postgres:$POSTGRES_PASSWORD@db:5432/postgres
 ENV DJANGO_SECURE_SSL_REDIRECT True
 ENV DJANGO_DEBUG False
-ENV DJANGO_ALLOWED_HOSTS the-federation.info,dev.the-federation.info,thefederation.local
+ENV DJANGO_ALLOWED_HOSTS the-federation.info,thefederation.local
 ENV DBHOST=db
 
 WORKDIR /app

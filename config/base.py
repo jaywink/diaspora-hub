@@ -284,28 +284,28 @@ LOGGING = {
     },
     "loggers": {
         "django.request": {
-            "handlers": ["file"],
+            "handlers": ["console"],
             "level": "ERROR",
             "propagate": True,
         },
         "django.security.DisallowedHost": {
             "level": "ERROR",
-            "handlers": ["console", "file"],
+            "handlers": ["console"],
             "propagate": True
         },
         "thefederation": {
             "level": "DEBUG",
-            "handlers": ["file"],
+            "handlers": ["console"],
             "propagate": False,
         },
         "federation": {
             "level": "DEBUG",
-            "handlers": ["file"],
+            "handlers": ["console"],
             "propagate": False,
         },
         "rq_scheduler.scheduler": {
             "level": "ERROR",
-            "handlers": ["file"],
+            "handlers": ["console"],
             "propagate": False,
         },
     }
