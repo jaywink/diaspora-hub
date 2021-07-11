@@ -66,7 +66,7 @@ class Platform(ModelBase):
             'ganggo': 'nodeinfo',
             'gnusocial': 'nodeinfo',
             'hubzilla': 'nodeinfo' if version >= (1, 6) else "statisticsjson",
-            'mastodon': 'mastodon',
+            'mastodon': 'nodeinfo' if version >= (3, 0, 0) else 'mastodon',
             'misskey': 'misskey',
             'osada': 'nodeinfo',
             'peertube': 'nodeinfo',
